@@ -1,0 +1,556 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Bebas+Neue&family=Manrope:wght@200..800&family=Poor+Story&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap') ;
+
+body {
+    margin: 0 ;
+}
+.intro {
+    background-color: #222428;
+    background-size: cover;
+    /* word-wrap: break-word; */
+}
+nav img {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    max-width: 100%;
+    padding: 0px;
+}
+
+ul {
+    list-style: none ;
+    display: flex ;
+    flex-direction: row;
+}
+
+ul li {
+    margin-left : 10px ;
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width:661px) {
+    nav{
+        flex-direction: column;
+    }
+
+    ul{
+        flex-direction: column;
+        margin-left: 0;
+    }
+}
+
+/* to remove underline */
+a.nav_link {
+    text-decoration: none; 
+    color: white;
+    font-family: Quicksand ;
+    font-weight: bold;
+}
+
+a.signup {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: whitesmoke; 
+    color: black; 
+    text-decoration: none;
+    border-radius: 5px; 
+    font-family: Quicksand ;
+    font-weight: bold;
+}
+
+.headerNavLinks{
+    left: 0;
+    bottom: 0;
+    top: 0;
+    float: right;
+    margin-top: 10px;
+}
+
+.nav_link:not(:last-child) {
+    margin-right: 15px; /* Adjust the value as needed for the desired spacing */
+}
+
+
+/* paragraph */
+.text-section {
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    flex-direction: row;
+    /* height: 100vh; */
+    line-height: 1.9;
+    margin-top: 1rem ;
+    font-size: 1rem;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin: 0px 0px 1.45rem;
+    padding: 0px;
+    max-width: 400px;
+}
+.container1 {
+    display: inline;
+    flex-direction: row;
+    /* max-width: 500px; */
+}
+.content p {
+    font-family: Manrope;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: left;
+    position:sticky;
+    top: 0; 
+    right: 10px;
+    bottom: 10px;
+    left: 0;
+    order: 3;
+}
+
+h2 {
+    font-family: Ubuntu;
+    font-weight: bold;
+    font-size: 3rem;
+    letter-spacing: -.03em;
+    margin-bottom: 0;
+    margin-top: -10px;
+    text-align: center;
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+}
+
+h1 {
+    font-family: Ubuntu;
+    font-weight: bold;
+    font-size: 4rem;
+    letter-spacing: -.03em;
+    margin-bottom: 0;
+    margin-top: -10px;
+    text-align: center; /* Center the text */
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally in column layout */
+    padding: 10px;
+    position: relative;
+}
+
+
+@media screen and (min-width: 768px) {
+.content p, h1, h2 {
+    text-align: left;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    max-width: 500px;
+} }
+h1, h2, p {
+    margin: 0;
+}
+
+/* Learn More */
+.learn {
+    background-color: #0055FF;
+    color: white;
+    font-family: 'Poor Story';
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 14px 20px;
+    width: 150px;
+    font-weight: lighter;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally in column layout */
+    padding: 20px;
+    position: relative;
+}
+
+@media screen and (min-width: 768px) {
+    .content {
+        align-items: flex-start; /* Align items towards the start (left) on larger screens */
+        margin-left: 80px; /* Adjust the margin as needed */
+    }
+}
+
+.img-section {
+    position: absolute;
+    top: 0; /* Adjust the top value as needed */
+    right: 300px;
+    top: -300px;
+    max-width: 400px;
+}
+
+.img-section img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+}
+
+@media screen and (max-width: 784px) {
+    .img-section {
+        position: static; /* Reset position to static for stacking on smaller screens */
+        margin-top: 20px; /* Add margin for spacing between button and image */
+    }
+}
+
+.companies h2 {
+    color: #222428;
+    font-size: 2.125rem;
+    grid-column: 1 / span 12;
+    letter-spacing: -0.03em;
+    padding-bottom: 3rem;
+    text-align: center;
+    font-family: Bebas Neue;
+    order: 1;
+    font-weight: lighter;
+}
+
+.companies , .customerlist{
+    background-color:#F1F1F1 ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh; /* Optional: Set a specific height for vertical centering */
+}
+
+.customerlist {
+    order: 2;
+}
+
+.q {
+    color: #082449;
+    order: 1;
+    width: 100%;
+}
+.payments_points {
+    color: rgb(35, 78, 164);
+    display: grid;
+    grid-column: 2 / span 10;
+    grid-row-start: 2;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    /* order: 1; */
+}
+
+.payments_point {
+align-items: center;
+display: flex;
+flex-direction: column;
+grid-column-end: span 1;
+line-height: 1.2;
+text-align: center;
+order: 2;
+color: #082449;
+}
+.payments_desc {
+    order: 3;
+    color: #222428;
+}
+@media only screen and (max-width: 1460px) {
+.payments_points {
+grid-column: 2 / span 10;
+} }
+@media only screen and (max-width: 768px) {
+.payments_points {
+    flex-direction: column;
+    align-items: flex-start;
+}
+}
+.products {
+    background-color: #222428;
+}
+@media only screen and (max-width: 768px) {
+.home-products1 h2 {
+    font-size: 3rem;
+    padding-right: 0.5rem;
+} }
+
+.home-products1 h2 {
+    color: white;
+    font-size: 4rem;
+    letter-spacing: -.03em;
+    line-height: 1.1;
+    margin-bottom: 2rem;
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    order: 1;
+}
+
+.home-products {
+   display: flex;
+   justify-content: center;
+}
+
+.home-products1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 768px) {
+.success h2 {
+    font-size: 3rem;
+}}
+
+.success h2 {
+    color: #082449;
+    font-size: 4rem;
+    letter-spacing: -.03em;
+}
+
+.primary, .secondary {
+    font-family: Raleway;
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 160%;
+}
+
+.primary {
+    color: #234ea4;
+}
+
+.success p {
+    margin: 0px 0px 1.45rem;
+    padding: 0px;
+}
+
+.author ul {
+    font-family: QuickSand;
+    list-style: none;
+    padding: 0;
+    text-align: left; /* Optional: Adjust text alignment as needed */
+}
+
+.author ul li {
+    font-family: QuickSand;
+    display: block;
+    margin-right: 10px; /* Optional: Adjust margin between list items as needed */
+}
+
+@media only screen and (max-width: 425px) {
+.success {
+    height: auto;
+}}
+
+@media only screen and (max-width: 768px) {
+.success {
+    background-color: white;
+    border-radius: 18px;
+    box-shadow: 10px 20px 130px 13px rgba(32,24,63,.1);
+    grid-column-end: 12;
+    grid-column-start: 2;
+    height: 26em;
+    padding: 1.5rem;
+    z-index: 5;
+}}
+.text {
+    background-color: #F5F5F7;
+    border: 2px solid black;
+    padding: 10px 12px;
+    height: max-content; /* Allow height to adjust to content */
+    min-height: 700px; /* Set a minimum height to ensure similar heights */
+    width: min-content;
+    text-align: center;
+    line-height: 1.6; /* Adjust line-height for vertical spacing */
+    margin: auto;
+    flex: 1; /* Distribute available space equally */
+    max-width: 500px; /* Adjusted for better content fitting */
+    margin: 10px;
+    overflow: hidden; /* Prevent text overflow */
+  }
+  
+  .text-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+    text-align: center;
+    height: max-content;
+    width: min-content;
+    align-items: stretch; 
+  }
+
+.text img {
+    width: 100%;
+    max-width: 100%; /* Make sure the image doesn't exceed its container */
+}
+
+.success {
+    text-align: center; /* Optional: Center the content horizontally */
+    /* align-items: center; */
+}
+
+.payments2 .img h1{
+    font-family: Raleway ;
+    color: #8B9EC4;
+    text-align: center;
+    order: 1;
+}
+
+.payments2{
+    background-color: rgb(36, 35, 35) ;
+    color: azure;
+    display: flex;
+}
+
+.payments2 .img h1{
+    font-size: 50px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+
+.payments2 img {
+    order: 2;
+}
+
+.payments2 .img{
+    display: flex;
+    flex-direction: column;
+    margin-left: 120px;
+    /* order: 2; */
+}
+
+.payments2 .written{
+    margin-left: 100px;
+    margin-top: 300px;
+}
+
+.payments2 .written h3{
+    font-size: 20px;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.payments2 .written h2{
+    font-size: 60px;
+    color: #80A3EA;
+    margin-bottom: 20px;
+}
+
+.payments2 .written h5{
+    font-size: 15px;
+    margin-bottom: 175px;
+}
+
+@media only screen and (max-width: 768px) {
+    .payments2 {
+        flex-direction: column;
+        align-items: center; /* Optional: Center the content vertically */
+    }
+
+    .img img {
+        margin-bottom: 0; /* Remove margin between images on smaller screens */
+    }
+}
+.devep {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.devep h1{
+    margin-top: 60px;
+    font-size: 60px;
+    color: #082449;
+    margin-left: 450px;
+}
+
+.devep h2{
+    font-size: 40px;
+    color: #8B9EC4;
+    margin-left: 500px;
+}
+
+.developers{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.developers .code{
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    width: 100%;
+    border-radius: 20px;
+    margin-top: 50px;
+    margin-left: 120px;
+    margin-bottom: 150px;
+    padding: 50px;
+}
+
+.developers .write {
+    width: 100%;
+    border-radius: 20px;
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-bottom: 150px;
+    padding: 50px;
+}
+.developers .write h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: rgb(0, 0, 0);
+}
+
+.developers .write h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.developers .write h4 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.developers button{
+    background-color: blue;
+    color: azure;
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+
+.code {
+    font-family: Source Code Pro;
+}
+.exp {
+    color: #5B5941;
+
+}
+
+.col {
+    color: #6ECBCC;
+}
+
+.write {
+    font-family: Abel;
+}
+
+.bold{
+    font-weight: bolder;
+    text-decoration: underline;
+    text-decoration-color: black ;
+}
